@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:linear-gradient(315deg,#fff 0%,#d7e1ec 80%)
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    display: inline-block;
+    margin: 0 10px;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: all 0.4s ease-out;
+}
+
+.button:hover{
+    width: 200px;
+}
+
+.icon{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    border-radius: 50px;
+    transition: all 0.4s ease;
+}
+
+/* 颜色变化 */
+.button:nth-child(1):hover .icon{
+    background: #19683E;
+}
+.button:nth-child(1) span{
+    color: #19683E;
+}
+
+.button:nth-child(2):hover .icon{
+    background: #1DA1F2;
+}
+.button:nth-child(2) span{
+    color: #1DA1F2;
+}
+
+.button:nth-child(3):hover .icon{
+    background: #333;
+}
+.button:nth-child(3) span{
+    color: #333;
+}
+
+.button:nth-child(4):hover .icon{
+    background: #f00;
+}
+.button:nth-child(4) span{
+    color: #f00;
+}
+
+.button:nth-child(5):hover .icon{
+    background: #883BA5;
+}
+.button:nth-child(5) span{
+    color: #883BA5;
+}
+
+.container .button .icon i{
+    font-size: 21px;
+    line-height: 60px;
+    transition: all 0.4s ease-out;
+}
+
+.container .button:hover i{
+    color: #fff;
+}
+.container .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 15px;
+}

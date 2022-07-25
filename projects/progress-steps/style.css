@@ -1,0 +1,83 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.container{
+    text-align: center;
+}
+
+.progressContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-bottom: 30px;
+    /* max-width: 100%; */
+    /* 包含块需开启相对定位 否则下面的伪元素会根据根元素定位 */
+    position: relative;
+}
+/* 使用伪元素制造空条 */
+.progressContainer::before{
+    content: "";
+    background-color: #e0e0e0;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    /* 设置较低层级防遮挡 */
+    z-index: -1;
+}
+/* 使用div制作加载条 */
+.progress{
+    background-color: #3498db;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    /* 填充颜色后会将加载条遮住 */
+    background-color: #fff;
+    border: 3px solid #e0e0e0;
+    color: #999;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease;
+}
+.circle.active{
+    border-color: #3498db;
+}
+
+button{
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 8px 30px;
+    /* 鼠标移入变换光标 */
+    cursor: pointer;
+    margin: 5px;
+}
+/* 点击后缩小按钮 */
+button:active{
+    transform: scale(0.98);
+}
+
+button:disabled{
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}

@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.carousel{
+    height: 530px;
+    width: 500px;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+img{
+    width: 500px;
+    height: 500px;
+    /* 对图片进行剪切，保留原始比例 */
+    object-fit: cover;
+}
+
+.image-container{
+    display: flex;
+    height: 500px;
+    width: 500px;
+    /* 向x轴进行移动元素 */
+    transform: translateX(0);
+    transition: transform 0.5s ease-in-out;
+}
+
+.btn{
+    width: 49.5%;
+    padding: 0.5rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: skyblue;
+}
+
+.buttons-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.btn:focus{
+    outline: none;
+}

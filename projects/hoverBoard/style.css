@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    /* overflow: hidden; */
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    max-width: 400px;
+    /* 由内容撑开高度 后期可以不设置 */
+    /* height: 500px; */
+    /* 弹性容器所包含元素的排列方式为多行分布 */
+    flex-wrap: wrap;
+}
+
+.square{
+    width: 16px;
+    height: 16px;
+    margin: 2px;
+    background-color: rgb(29, 29, 29);
+    /* 小方块之间的空隙由阴影制作 */
+    box-shadow: 0 0 2px #000;
+    transition: 2s ease;
+}
+
+.square:hover,.square:click{
+    transition-duration: 0s;
+}
