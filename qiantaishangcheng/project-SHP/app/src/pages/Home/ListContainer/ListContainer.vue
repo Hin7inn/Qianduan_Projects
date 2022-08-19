@@ -13,11 +13,11 @@
           </h4>
           <div class="clearix"></div>
           <ul class="news-list unstyled">
-            <li><span class="bold">[特惠]</span>备战开学季 全民半价购数码</li>
-            <li><span class="bold">[公告]</span>备战开学季 全民半价购数码</li>
-            <li><span class="bold">[特惠]</span>备战开学季 全民半价购数码</li>
-            <li><span class="bold">[公告]</span>备战开学季 全民半价购数码</li>
-            <li><span class="bold">[特惠]</span>备战开学季 全民半价购数码</li>
+            <li class="bd"><span class="bold">[特惠]</span>备战开学季 全民半价购数码</li>
+            <li class="bd"><span class="bold">[公告]</span>备战开学季 全民半价购数码</li>
+            <li class="bd"><span class="bold">[特惠]</span>备战开学季 全民半价购数码</li>
+            <li class="bd"><span class="bold">[公告]</span>备战开学季 全民半价购数码</li>
+            <li class="bd"><span class="bold">[特惠]</span>备战开学季 全民半价购数码</li>
           </ul>
         </div>
         <ul class="lifeservices">
@@ -137,15 +137,28 @@ export default {
             font-size: 12px;
             font-weight: 400;
           }
+
+          .fr:hover {
+            color: red;
+            cursor: pointer;
+          }
         }
 
         .news-list {
           padding: 5px 15px;
           line-height: 26px;
 
+          .bd:hover {
+            color: red;
+            cursor: pointer;
+            text-decoration: underline;
+          }
+
           .bold {
             font-weight: 700;
           }
+
+
         }
       }
 

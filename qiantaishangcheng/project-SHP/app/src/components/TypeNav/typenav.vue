@@ -156,7 +156,7 @@ export default {
   },
   computed: {
     ...mapState({
-      // 右侧需要的是一个函数,当使用这个计算属性的时候,右侧熟函数会立即执行一次
+      // 右侧需要的是一个函数,当使用这个计算属性的时候,右侧函数会立即执行一次
       // 注入一个参数state，其实即为大仓库中的数据
       categoryList: (state) => {
         return state.home.categoryList.slice(0, 16);
@@ -232,6 +232,7 @@ export default {
             border: 1px solid #ddd;
             top: 0;
             z-index: 9999 !important;
+            
 
             .subitem {
               float: left;
@@ -246,6 +247,10 @@ export default {
 
                 &.fore {
                   border-top: 0;
+                  
+                  a{
+                    cursor: pointer;
+                  }
                 }
 
                 dt {

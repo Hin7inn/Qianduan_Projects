@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum-kit</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div data-key="65" class="key">
+        <kbd>A</kbd>
+        <span class="sound">crash</span>
+    </div>
+    <div data-key="83" class="key">
+        <kbd>S</kbd>
+        <span class="sound">crash2</span>
+    </div>
+    <div data-key="68" class="key">
+        <kbd>D</kbd>
+        <span class="sound">cymbal</span>
+    </div>
+    <div data-key="70" class="key">
+        <kbd>F</kbd>
+        <span class="sound">cymbal2</span>
+    </div>
+    <div data-key="71" class="key">
+        <kbd>G</kbd>
+        <span class="sound">drm</span>
+    </div>
+    <div data-key="72" class="key">
+        <kbd>H</kbd>
+        <span class="sound">snrdrum</span>
+    </div>
+    <div data-key="74" class="key">
+        <kbd>J</kbd>
+        <span class="sound">snr2</span>
+    </div>
+    <div data-key="75" class="key">
+        <kbd>K</kbd>
+        <span class="sound">tom</span>
+    </div>
+    <div data-key="76" class="key">
+        <kbd>L</kbd>
+        <span class="sound">tom2</span>
+    </div>
+
+    <audio data-key="65" src="./sounds/crash.WAV"></audio>
+    <audio data-key="83" src="./sounds/crash2.WAV"></audio>
+    <audio data-key="68" src="./sounds/cymbal.WAV"></audio>
+    <audio data-key="70" src="./sounds/cymbal2.WAV"></audio>
+    <audio data-key="71" src="./sounds/drm.WAV"></audio>
+    <audio data-key="72" src="./sounds/snrdrum.WAV"></audio>
+    <audio data-key="74" src="./sounds/snrdrum2.WAV"></audio>
+    <audio data-key="75" src="./sounds/tom.WAV"></audio>
+    <audio data-key="76" src="./sounds/tom2.WAV"></audio>
+</body>
+</html>
+
+<script src="./index.js"></script>
